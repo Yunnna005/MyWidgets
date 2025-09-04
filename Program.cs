@@ -16,7 +16,7 @@ namespace MyWidgets
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmGoogleCalendar());
+            Application.Run(new frmMyWidget());
         }
     }
 }
