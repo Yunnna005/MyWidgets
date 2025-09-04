@@ -28,5 +28,11 @@ namespace MyWidgets
             var createTemporaryNote = new frmTemporaryNote();
             createTemporaryNote.Show();
         }
+
+        private void btnCalendar_Click(object sender, EventArgs e)
+        {
+            var createCalendarWidget = new frmGoogleCalendar1();
+            createCalendarWidget.Show();
+        }
     }
 }

@@ -41,7 +41,7 @@
             // btnClock
             // 
             this.btnClock.Location = new System.Drawing.Point(265, 69);
-            this.btnClock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClock.Margin = new System.Windows.Forms.Padding(4);
             this.btnClock.Name = "btnClock";
             this.btnClock.Size = new System.Drawing.Size(217, 71);
             this.btnClock.TabIndex = 0;
@@ -52,17 +52,18 @@
             // btnCalendar
             // 
             this.btnCalendar.Location = new System.Drawing.Point(265, 148);
-            this.btnCalendar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCalendar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalendar.Name = "btnCalendar";
             this.btnCalendar.Size = new System.Drawing.Size(217, 71);
             this.btnCalendar.TabIndex = 1;
             this.btnCalendar.Text = "Calendar";
             this.btnCalendar.UseVisualStyleBackColor = true;
+            this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
             // 
             // btnMusicPlayer
             // 
             this.btnMusicPlayer.Location = new System.Drawing.Point(265, 226);
-            this.btnMusicPlayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMusicPlayer.Margin = new System.Windows.Forms.Padding(4);
             this.btnMusicPlayer.Name = "btnMusicPlayer";
             this.btnMusicPlayer.Size = new System.Drawing.Size(217, 65);
             this.btnMusicPlayer.TabIndex = 2;
@@ -116,7 +117,7 @@
             // btnNotes
             // 
             this.btnNotes.Location = new System.Drawing.Point(265, 299);
-            this.btnNotes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNotes.Margin = new System.Windows.Forms.Padding(4);
             this.btnNotes.Name = "btnNotes";
             this.btnNotes.Size = new System.Drawing.Size(217, 65);
             this.btnNotes.TabIndex = 6;
@@ -137,7 +138,7 @@
             this.Controls.Add(this.btnMusicPlayer);
             this.Controls.Add(this.btnCalendar);
             this.Controls.Add(this.btnClock);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMyWidget";
             this.Text = "MyWidgets";
             this.ResumeLayout(false);

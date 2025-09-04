@@ -20,7 +20,7 @@ namespace MyWidgets
         [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
 
-        public static void EnableFormDrag(Form form)
+        public static void EnableFormDragForm(Form form)
         {
             form.MouseDown += (sender, e) =>
             {
@@ -31,5 +31,18 @@ namespace MyWidgets
                 }
             };
         }
+
+        public static void EnableFormDragPanel(Panel panel)
+        {
+            panel.MouseDown += (sender, e) =>
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    ReleaseCapture();
+                    SendMessage(panel.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+                }
+            };
+        }
+
     }
 }

@@ -20,7 +20,7 @@ namespace MyWidgets
 
         private void frmTemporaryNote_MouseDown(object sender, MouseEventArgs e)
         {
-            Utils.EnableFormDrag(this);
+            Utils.EnableFormDragForm(this);
         }
 
         private void frmTemporaryNote_MouseDoubleClick(object sender, MouseEventArgs e)

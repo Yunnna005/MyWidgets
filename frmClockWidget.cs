@@ -30,7 +30,7 @@ namespace MyWidgets
 
         private void frmClockWidget_MouseDown(object sender, MouseEventArgs e)
         {
-            Utils.EnableFormDrag(this);
+            Utils.EnableFormDragForm(this);
         }
 
         private void frmClockWidget_MouseDoubleClick(object sender, MouseEventArgs e)
